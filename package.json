@@ -1,0 +1,43 @@
+{
+  "name": "jjojo-otaku",
+  "version": "1.0.0",
+  "description": "Modern Anime Streaming Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "pm2:start": "pm2 start server.js --name jjojo-otaku",
+    "pm2:stop": "pm2 stop jjojo-otaku",
+    "pm2:restart": "pm2 restart jjojo-otaku"
+  },
+  "keywords": [
+    "anime",
+    "streaming",
+    "otakudesu",
+    "nodejs",
+    "express"
+  ],
+  "author": "Joodev65",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.12",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-session": "^1.17.3",
+    "helmet": "^7.1.0",
+    "memory-cache": "^0.2.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
